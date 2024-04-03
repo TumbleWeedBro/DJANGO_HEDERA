@@ -3,10 +3,10 @@ from pathlib import Path
 
 # decouple
 from decouple import Csv, config
-from dotmap import Dotmap
+from dotmap import DotMap
 
 # init enviroment
-ENV = Dotmap({'config': config, 'csv': Csv})
+ENV = DotMap({'config': config, 'Csv': Csv})
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
