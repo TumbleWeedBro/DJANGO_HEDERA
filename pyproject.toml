@@ -8,7 +8,7 @@ readme = "README.rst"
 
 [tool.isort]
 multi_line_output = 5 
-line_length - 119
+line_length = 119
 
 [tool.yapf]
 based_on_style = "google"
@@ -20,6 +20,7 @@ dedent_closing_brackets = true
 [tool.poetry.dependencies]
 python = "^3.11"
 Django = "4.2.11"
+python-decouple = "^3.8"
 
 
 [build-system]
