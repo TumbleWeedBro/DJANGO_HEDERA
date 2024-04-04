@@ -1,16 +1,10 @@
-from core.project import BASE_DIR, ENV
+from core.project.settings import BASE_DIR, ENV
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ENV.config('SECRET_KEY')
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = ENV.config('DEBUG', cast=bool)
-
-ALLOWED_HOSTS = ENV.config('ALLOWED_HOSTS', cast=ENV.Csv())
-
+SECRET_KEY = NotImplemented
 
 # Application definition
 
@@ -70,11 +64,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
-
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
